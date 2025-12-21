@@ -28,6 +28,12 @@ jobs:
         run: npm ci
       - name: Build Quartz
         run: npx quartz build
+      
+      # 👇 ADDED THIS STEP
+      - name: Create CNAME
+        run: echo "anirudh.blog" > public/CNAME
+      # 👆 END OF NEW STEP
+
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
