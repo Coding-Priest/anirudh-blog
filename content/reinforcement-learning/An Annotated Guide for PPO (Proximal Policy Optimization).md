@@ -33,6 +33,7 @@ This algorithm is Off-Policy because we are following a greedy approach while sa
 
 ## **Why use On-Policy algorithm?**
 ![[Pasted image 20251221164535.png]]
+
 Let's understand it through the cliff walking example. An agent is at the start of the grid denoted by S. Agent has to go to the end marked by E but the agent cannot fall into the cliff.
 
 As for the rewards, the agent gets -1 for every step taken and -100 if it falls off the cliff.
@@ -40,9 +41,11 @@ As for the rewards, the agent gets -1 for every step taken and -100 if it falls 
 So what do you think the path of the agent will look like if he followed an On-Policy algorithm vs Off-Policy?
 
 ![[Pasted image 20251221164719.png]]
+
 An Off-Policy algorithm like Q-Learning will give a path that is very close to the cliff, it will give a risky path because our target policy is so greedy that even if it gets a reward of -100 from falling off, it will still consider the path that is near to the cliff as safe. 
 
 ![[Pasted image 20251221164825.png]]
+
 Whereas something like SARSA would prefer a path that is safe because the agent is trying to execute the same policy it learns. The agent will sometimes try to execute it's own policy and fall off the cliff which the agent will be discouraged to do.
 
 Here we would want our algorithm to behave more like SARSA because we don't want our agent to become unstable and have a risk of falling down the cliff.
@@ -604,7 +607,7 @@ def train_ppo(env, agent, buffer, optimizer, config):
 
 Now we just have to define hyper-parameters and train our PPO agent
 
-main.py
+### main.py
 
 ```python
 import gymnasium as gym
