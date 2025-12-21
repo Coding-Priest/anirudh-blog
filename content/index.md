@@ -10,7 +10,7 @@ This site captures the journey of my projects as I transition from high-level th
 ---
 
 ## Current Work
-* **[Annotated PPO](reinforcement-learning/An-Annotated-Guide-for-PPO-(Proximal-Policy-Optimization))**: A deep dive into Proximal Policy Optimization, focusing on implementation details and the transition from theory to PyTorch code.
+* **[Annotated PPO](<An-Annotated-Guide-to-PPO-(Proximal-Policy-Optimization).md>)**: A deep dive into Proximal Policy Optimization, focusing on implementation details and the transition from theory to PyTorch code.
 
 ## Areas of Interest
 My work currently involves exploring the following domains:

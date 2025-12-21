@@ -1,5 +1,7 @@
 
-
+---
+title: An Annotated Guide to PPO (Proximal Policy Optimization)
+---
 ## **Introduction**
 
 I have written this article to explore my own intuition behind why the PPO algorithm works, and why is it preferred over other learning methods. This article by no means has mathematical depth or intuition that you would expect from a book or a series of lectures. My aim with this article is to explore some of the interesting things I have found out while implementing this algorithm from scratch and it's various characteristics. 
